@@ -1,0 +1,28 @@
+<div class="container">
+
+    <p>{{student.username}}</p>
+    <p>{{student.email}}</p>
+    <p>{{student.description}}</p>
+
+
+    {{#if isPm}}
+
+    <a href="/students/edit/{{student.id}}">Edit</a>
+
+    <form action="/students/delete/{{student.id}}" method="POST">
+        <input type="submit" value="delete" class="btn btn-danger btn-sm">
+    </form>
+
+    <form action="/students/changeroletodev/{{student.id}}" method="POST">
+        <input type="submit" value="Switch to DEVELOPER" class="btn btn-light btn-sm">
+    </form>
+
+    <form action="/students/delete/{{student.id}}" method="POST">
+        <input type="submit" value="Switch to TA" class="btn btn-light btn-sm">
+    </form>
+
+
+    {{/if}}
+
+
+</div>
