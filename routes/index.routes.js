@@ -93,15 +93,4 @@ router.post("/students/changeroletota/:id", (req, res) => {
 
 
 
-// router.get("students/myprofile/:id", isLoggedIn, canEditProfile, (req, res) => {
-
-//   const { id } = req.params
-//   const { username, email, description } = req.body
-//   User
-//     .find(id)
-//     .then(profile => res.render("/students/myprofile", profile))
-//     .catch(err => console.log("no te llevo a tu perfil ja", err))
-// })
-
-
 module.exports = router
